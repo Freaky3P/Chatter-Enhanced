@@ -1,0 +1,56 @@
+# WoW Addon Development
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.iml
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Lua
+luac.out
+
+# Local testing
+/test-addon/
+/local-tests/
+*.tmp
+*.bak
+
+# Session/temp files
+*.log
+*.dmp
+debug.log
+
+# Build artifacts
+/dist/
+/build/
+/out/
+
+# Dependencies (if any)
+/lib/
+/libs/
+node_modules/
+
+# Environment
+.env
+.env.local
+.env.*.local
