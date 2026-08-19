@@ -1,11 +1,21 @@
-# WoW Addon Development
+# .gitignore for Chatter-Enhanced (WoW addon)
+# Cleaned and tuned for this repository: keeps vendored Ace3 libs in Chatter/Libs tracked.
+
+# Editor swap/temp files
 *.swp
 *.swo
 *~
-.DS_Store
-Thumbs.db
 
-# IDE
+# macOS / Windows
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+
+# IDEs
 .vscode/
 .idea/
 *.sublime-project
@@ -16,41 +26,40 @@ Thumbs.db
 .c9/
 *.launch
 .settings/
-*.sublime-workspace
 
-# OS
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-
-# Lua
+# Lua compiled files
+*.luac
+*.luac.out
 luac.out
 
-# Local testing
+# Local testing / temporary folders
 /test-addon/
 /local-tests/
 *.tmp
 *.bak
 
-# Session/temp files
+# Logs and dumps
 *.log
 *.dmp
 debug.log
 
-# Build artifacts
+# Build / distribution outputs
 /dist/
 /build/
 /out/
+*.zip
 
-# Dependencies (if any)
-/lib/
-/libs/
+# Node (if used for tooling)
 node_modules/
 
-# Environment
+# Dependencies
+# Ignore generic lib folders at repo root, but do NOT ignore the vendored libraries contained in Chatter/Libs
+/lib/
+/libs/
+!Chatter/Libs/
+!Chatter/Libs/**
+
+# Environment / secrets
 .env
 .env.local
 .env.*.local
